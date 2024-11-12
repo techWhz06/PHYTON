@@ -25,26 +25,16 @@ for letter in splited_letters:
     else:
         vowels_only.append(letter)
         
-print(removed_vowel)
+# print(removed_vowel)
 # print(vowels_only)
 
-joined_vowels = ''.join(removed_vowel)
+joined_consonants = ''.join(removed_vowel)
 
-n = open("vowels.txt", "w")
-written = n.write(vowels_only)
-
-# if 
-
-# def rmVowel():
-#     sorted_list = splited_letters.sort()
-#     print(sorted_list)
+c = open("consonants.txt", "w")
+consonant = c.write(joined_consonants)
 
 
+joined_vowels = ''.join(vowels_only)
 
-# listVersionofg.remove('a')
-# print(listVersionofg)
-
-
-
-# for word in listVersionofg:
-    # print(word)
+v = open("Vowels.txt", "w")
+vowel = v.write(joined_vowels)
